@@ -6,6 +6,18 @@ import DiscoverMoviesPage from "./Pages/DiscoverMoviesPage";
 import AboutPage from "./Pages/AboutPage";
 import Homepage from "./Pages/Homepage";
 
+function Discover() {
+  return <h1>Discover</h1>;
+}
+
+function About() {
+  return <h1>About</h1>;
+}
+
+function Home() {
+  return <h1>Home</h1>;
+}
+
 function App() {
   return (
     <div className="App">

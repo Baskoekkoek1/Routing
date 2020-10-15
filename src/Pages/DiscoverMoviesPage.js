@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function DiscoverMoviesPage() {
-  return <div>DiscoverMoviesPage</div>;
+  return <div>This is where we discover movies</div>;
 }
