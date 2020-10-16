@@ -26,7 +26,7 @@ export default function MoviePage() {
       <h1>
         {movieData.data?.Title} ({movieData.data?.Year})
       </h1>
-      <img src={movieData.data?.Poster} alt={movieData.data?.Title} />
+      <img src={movieData.data?.Poster} alt="movie poster" />
       <p style={{ fontWeight: "bold" }}>Director: {movieData.data?.Director}</p>
       <p>{movieData.data?.Plot}</p>
     </div>
