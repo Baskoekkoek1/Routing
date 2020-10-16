@@ -26,6 +26,8 @@ export default function DiscoverMoviesPage() {
       console.log("TEXTSEARCH", searchText);
       if (response.data.Error === "Movie not found!") {
         setMovie({ status: "Oops, could not find your movie!", data: null });
+      } else if (params.searchtext === undefined) {
+        setMovie({ status: "idle", data: null });
       } else {
         setMovie({ status: "done", data: response.data.Search });
         set_searchText(params.searchtext);
@@ -34,7 +36,7 @@ export default function DiscoverMoviesPage() {
       console.log("Hello");
     }
     fetchData();
-  }, [params.searchtext]);
+  }, [searchText, params.searchtext]);
   console.log("MOVIEDATA", movies.data);
 
   if (movies.data === null) {

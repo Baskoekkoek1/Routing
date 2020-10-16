@@ -17,7 +17,7 @@ export default function MoviePage() {
       set_movieData({ status: "done", data: response.data });
     }
     fetchData();
-  }, []);
+  }, [route_parameters.imdbID]);
 
   console.log("Data of a movie:", movieData.data);
 
